@@ -6,10 +6,10 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '1410e7d6-5efd-4c5d-bca2-8cb092f2bfd7';
 
-const proxyIPs = ['2606:4700:100::a29f:c103','2606:4700:100::a29f:c106','2606:4700:100::a29f:c109']; //'cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'
+const proxyIPs = ['104.28.153.18','104.28.153.10','104.28.153.16','2a09:bac5:cb26:154b::21f:39','2a09:bac5:cb27:154b::21f:b6','2a09:bac5:cb21:119::1c:26d']; //'cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://1.1.1.1/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://sky.rethinkdns.com:443/1:-P__fwDgBAB_A__92_8iQazgwBFUMyCAZfsA2A=='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 // v2board api environment variables
 let nodeId = ''; // 1
