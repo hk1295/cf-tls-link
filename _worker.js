@@ -100,8 +100,8 @@ export default {
                     }
                     default:
                         // return new Response('Not found', { status: 404 });
-                        // For any other path, reverse proxy to 'tv.apple.com' and return the original response
-                        url.hostname = 'tv.apple.com';
+                        // For any other path, reverse proxy to 'www.yhdmdm.com' and return the original response
+                        url.hostname = 'www.yhdmdm.com';
                         url.protocol = 'https:';
                         request = new Request(url, request);
                         return await fetch(request);
